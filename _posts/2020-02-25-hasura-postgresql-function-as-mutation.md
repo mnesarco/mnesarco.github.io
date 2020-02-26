@@ -133,7 +133,7 @@ The trigger will prepend 'action_' and call action_sum
 mutation POST_ACTION($object : action_journal_insert_input!) {
     action: insert_action_journal(objects: [$object]) {
       returning {
-        response
+        response_
       }
     }
 }
@@ -154,7 +154,7 @@ variables {
         action: {
             returning: [
                 {
-                    response: {
+                    response_: {
                         _status: "success",
                         result: 30
                     }
