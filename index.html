@@ -2,6 +2,60 @@
 layout: default
 title: Mnesarco's Short Articles
 ---
-<div class="blurb">
-	<h1>Test Initial commit!</h1>
+
+<div class="container">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-2">
+          <img src="https://github.com/mnesarco.png" class="card-img" alt="Avatar">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5 class="card-title">Frank D. Mart&iacute;nez M. (a.k.a mnesarco)</h5>
+            <p class="card-text">Software Developer/Architect, Maker, Luthier's apprentice</p>
+            <p class="card-text">
+                <span class="badge badge-secondary">Java</span>
+                <span class="badge badge-secondary">Android</span>
+                <span class="badge badge-secondary">Flutter</span>
+                <span class="badge badge-secondary">GraphQL</span>
+                <span class="badge badge-secondary">Postgresql</span>
+                <span class="badge badge-secondary">Hasura</span>
+                <span class="badge badge-secondary">ReactJS</span>
+                <span class="badge badge-secondary">SQL</span>
+                <span class="badge badge-secondary">HTML</span>
+                <span class="badge badge-secondary">PHP</span>
+                <span class="badge badge-secondary">Wordpress</span>
+                <span class="badge badge-secondary">C/C++</span>
+                <span class="badge badge-secondary">Python</span>
+                <span class="badge badge-secondary">Javascript</span>
+                <span class="badge badge-secondary">Dart</span>
+                <span class="badge badge-secondary">...</span>
+                <br />
+                <span class="badge badge-secondary">Arduino</span>
+                <span class="badge badge-secondary">STM32</span>
+                <span class="badge badge-secondary">GRBL</span>
+                <span class="badge badge-secondary">Analog Guitar Stomboxes</span>
+                <span class="badge badge-secondary">...</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>    
 </div>
+
+
+<div class="container" style="margin-top: 10px;">
+    <div class="card">
+        <div class="card-header">Articles</div>
+          <div class="card-body">
+            <ul class="posts">
+              {% for post in site.posts %}
+                <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+    </div>    
+</div>
+
+

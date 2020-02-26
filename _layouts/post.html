@@ -1,9 +1,28 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-  {{ content }}
+<div class="container">
+
+    <h3>{{ page.title }}</h3>
+    <p class="meta">Date: {{ page.date | date_to_string }}</p>
+
+    <div class="card">
+
+      <div class="card-body">
+          {{ content }}
+      </div>
+
+      <div class="card-body">
+        <p class="card-text">
+        {% for category in page.categories %}
+            <span class="badge badge-secondary">{{ category }}</span>
+        {% endfor %}
+        </p>
+      </div>
+
+    </div>    
+
 </div>
+
+
