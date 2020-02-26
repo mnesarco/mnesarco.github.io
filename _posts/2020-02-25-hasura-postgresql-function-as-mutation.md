@@ -165,7 +165,7 @@ variables {
 }
 ```
 
-
+To add more functions you just need to insert the name in table action and create the function in postgresql with 'action_' prefix.
 
 
 
