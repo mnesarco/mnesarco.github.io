@@ -124,7 +124,7 @@ LANGUAGE plpgsql VOLATILE;
 Expose our function
 
 ```sql
-INSERT INTO action('sum');
+INSERT INTO action VALUES ('sum');
 ```
 
 The trigger will prepend 'action_' and call action_sum
