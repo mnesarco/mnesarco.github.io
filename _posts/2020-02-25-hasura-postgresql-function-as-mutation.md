@@ -22,6 +22,8 @@ but you can combine some easy tricks to archive that.
 3. Define a trigger to call actual functions
 4. Configure hasura with proper presets
 
+![fig1](/images/hasura-action-pg.png)
+
 ## Implementation
 
 **1. Create a table for the names of the functions that will be exposed by GraphQL**
@@ -89,7 +91,7 @@ CREATE TRIGGER dispatcher
 1. Expose table action_journal
 2. Set insert permissions as needed
 3. Configure insert presets to match user_id_ with session var x-hasura-user-id
-        ![fig1](/images/hasura-presets.png)
+        ![fig2](/images/hasura-presets.png)
 
 
 ## Test
