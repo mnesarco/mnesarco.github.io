@@ -169,7 +169,9 @@ variables {
 
 To add more functions you just need to insert the name in table action and create the function in postgresql with 'action_' prefix.
 
+**Github example code**
 
+See example implementation code: [https://github.com/mnesarco/hasura-pg-actions](https://github.com/mnesarco/hasura-pg-actions)
 
 
 
