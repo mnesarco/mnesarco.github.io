@@ -171,7 +171,7 @@ To add more functions you just need to insert the name in table action and creat
 
 **Github example code**
 
-See example implementation code: https://github.com/mnesarco/hasura-pg-actions
+See example implementation code: [Link to source code](https://github.com/mnesarco/hasura-pg-actions)
 
 
 
