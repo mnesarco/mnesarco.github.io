@@ -22,7 +22,7 @@ Ok but what is metaprogramming? here is a definition from wikipedia:
         -- Harald Sondergaard. "Course on Program Analysis and Transformation". Retrieved 18 September 2014.
     </small><br />
     <small>
-        -- Czarnecki, Krzysztof; Eisenecker, Ulrich W. (2000). Generative Programming. ISBN 0-201-30977-7.</cite>
+        -- Czarnecki, Krzysztof; Eisenecker, Ulrich W. (2000). Generative Programming. ISBN 0-201-30977-7.
     </small>
   </p>
   
