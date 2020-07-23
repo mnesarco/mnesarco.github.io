@@ -167,7 +167,7 @@ class Car:
 
         @meta.prop(listener='_on_acceleration')
         def speed(self) -> float:
-            "Speed of the car"""
+            """Speed of the car"""
             return 0  # Default stopped
 
         @meta.prop(listener='_on_off_listener')
@@ -248,7 +248,7 @@ class CarTaditional:
 
     @property
     def speed(self) -> float:
-        "Speed of the car"""
+        """Speed of the car"""
         return self._speed
 
     @speed.setter
@@ -327,7 +327,7 @@ Default values are specified at property definition.
 ```python
 @meta.prop(listener='_on_acceleration')
 def speed(self) -> float:
-    "Speed of the car"""
+    """Speed of the car"""
     return 0  # Default stopped
 ```
 
