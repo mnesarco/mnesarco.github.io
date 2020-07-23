@@ -14,10 +14,13 @@ means that you can do a lot of metaprogramming in python. Metaprogramming is a k
 Ok but what is metaprogramming? here is a definition from wikipedia:
 
 
-> Metaprogramming is a programming technique in which computer programs have the ability to treat other programs as their data. It means that a program can be designed > to read, generate, analyze or transform other programs, and even modify itself while running.
->
-> -- Harald Sondergaard. "Course on Program Analysis and Transformation". Retrieved 18 September 2014.<br />
-> -- Czarnecki, Krzysztof; Eisenecker, Ulrich W. (2000). Generative Programming. ISBN 0-201-30977-7.
+<pre>
+Metaprogramming is a programming technique in which computer programs have the ability to treat other programs as their data. It means that a program can be designed > to read, generate, analyze or transform other programs, and even modify itself while running.
+
+  -- Harald Sondergaard. "Course on Program Analysis and Transformation". Retrieved 18 September 2014.
+  -- Czarnecki, Krzysztof; Eisenecker, Ulrich W. (2000). Generative Programming. ISBN 0-201-30977-7.
+</pre>
+
 
 In this article, I will use metaprogramming to change how properties are defined in a class, how they can be docummented, initialized, how to set a default value, how to make them readonly and observable, and as a bonus, I will improve memory usage of the objects created by the class. And as a bonus 2, I will seal the object against attribute injections. I call this "Properties on Steroids".
 
@@ -40,7 +43,7 @@ In this article, I will use metaprogramming to change how properties are defined
 
 In python, classes are created at runtime, so the code inside the class scope can modify the resulting class by adding/removing/replacing things in the class scope (local).
 
-For more info about classes in Python: https://docs.python.org/3/tutorial/classes.html
+For more info about classes in Python: [https://docs.python.org/3/tutorial/classes.html]
 
 ### Scopes
 
@@ -59,7 +62,7 @@ def myfunc():
 
 ```
 
-For more info about scopes in python: https://realpython.com/python-scope-legb-rule/
+For more info about scopes in python: [https://realpython.com/python-scope-legb-rule/]
 
 ### Decorators
 
@@ -92,7 +95,7 @@ The above code will print:
 > By from modified fun
 ```
 
-For more info about decorators: https://realpython.com/primer-on-python-decorators/
+For more info about decorators: [https://realpython.com/primer-on-python-decorators/]
 
 ### Properties
 
@@ -116,7 +119,7 @@ class MyClass:
 
 We will change this pattern to add more features like observability, and automatic usage of slots.
 
-For more info about properties: https://docs.python.org/3/howto/descriptor.html#properties
+For more info about properties: [https://docs.python.org/3/howto/descriptor.html#properties]
 
 
 ### Slots
@@ -125,15 +128,15 @@ Objects in Python do store attributes in an internal dictionary called `__dict__
 
 I will not explain slots here, but you can find detailed info in the following resources: 
 
-- https://book.pythontips.com/en/latest/__slots__magic.html
-- https://docs.python.org/3/reference/datamodel.html#slots
+- [https://book.pythontips.com/en/latest/__slots__magic.html]
+- [https://docs.python.org/3/reference/datamodel.html#slots]
 
 
 ### Context Managers
 
 Context managers are objects that can execute code at the begining and at the end of a code block. they are used with the `with` statement.
 
-For more info about context managers: https://docs.python.org/3/library/contextlib.html
+For more info about context managers: [https://docs.python.org/3/library/contextlib.html]
 
 ## Proposed Solution
 
@@ -616,4 +619,4 @@ Arguments:
 
 Thanks for reading.
 
-Gist on Github: https://gist.github.com/mnesarco/e9440a196824af4bae439e4aeb4b6dcc
+Gist on Github: [https://gist.github.com/mnesarco/]e9440a196824af4bae439e4aeb4b6dcc
