@@ -2,3 +2,5 @@ name: Mnesarco's short articles
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
+kramdown:
+  syntax_highlighter: rouge
