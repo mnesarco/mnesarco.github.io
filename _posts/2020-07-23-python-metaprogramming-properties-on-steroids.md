@@ -5,7 +5,7 @@ date: 2020-07-23
 categories: [python, metaprogramming, advanced]
 ---
 
-Metaprogramming is an advanced topic, it requires a good understanding of the language itself. I assume you already know Python well enough and I put references to complementary resources. If you are interested only in the final result, there is a link to te code at the end of the article.
+Metaprogramming is an advanced topic, it requires a good understanding of the language itself. I assume you already know Python well enough even though I include references to complementary resources. If you are interested only in the final result, there is a link to te code at the end of the article.
 
 Python is a very dynamic language, everything is an object, objects are created by classes (usually) but classes can also be created by other
 clases or functions (this is amazing). Objects, once created, can be modified (add/remove/replace properties, methods, attributes, etc...) and this
@@ -28,18 +28,18 @@ Ok but what is metaprogramming? here is a definition from wikipedia:
   
 </div>
 <br />
-In this article, I will use metaprogramming to change how properties are defined in a class, how they can be docummented, initialized, how to set a default value, how to make them readonly and observable, and as a bonus, I will improve memory usage of the objects created by the class. And as a bonus 2, I will seal the object against attribute injections. I call this "Properties on Steroids".
+In this article, I will use metaprogramming to change how properties are defined in a class, how they can be documented, initialized, how to set a default value, how to make them read-only and observable, and as a bonus, I will improve memory usage of the objects created by the class. And as a second bonus, I will seal the object against attribute injections. I call this "Properties on Steroids".
 
 ## Requirements
 
-1. A property must be defined in a succint and pythonic way.
+1. A property must be defined in a succinct and pythonic way.
 2. A property definition can setup a default value.
 3. A property must support docstring (`__doc__`).
 4. A Property can have a type hint.
-5. A Property can be read only or read and write.
+5. A Property can be read-only or read-and-write.
 6. A Property can be observable.
 7. A Property must not use more memory than traditional python property (@property)
-8. Bonus: Field stotage can be optimized
+8. Bonus: Field storage can be optimized
 9. Bonus2: Objects created from the class must be protected from field injection.
 10. **DO NOT USE A METACLASS**
 
@@ -55,7 +55,7 @@ For more info about classes in Python: [https://docs.python.org/3/tutorial/class
 
 There are two scopes in python: **local** and **global**. Scopes are symbol tables of what is reachable from the current point in code. you can access the symbol table using the builtin functions `locals()` and `globals()`. The important part here is that you can modify the scope just adding/replacing/removing things in the symbol table.
 
-For example, if you want to define a variable in the local scope dinamically:
+For example, if you want to define a variable in the local scope dynamically:
 
 ```python
 def myfunc():
@@ -72,7 +72,7 @@ For more info about scopes in python: [https://realpython.com/python-scope-legb-
 
 ### Decorators
 
-In python, functions are objects, and can be passed to other functions like any other object. The idea of a decorator is a function that receives another function and returns a new function based on the original. There is a special syntax in python to call a decorator function just on function definition and effectively replacing the original function with the one returned by the decorator.
+In python, functions are objects and can be passed to other functions like any other object. The idea of a decorator is a function that receives another function and returns a new function based on the original. There is a special syntax in python to call a decorator function just on function definition and effectively replacing the original function with the one returned by the decorator.
 
 Example:
 
@@ -105,7 +105,7 @@ For more info about decorators: [https://realpython.com/primer-on-python-decorat
 
 ### Properties
 
-Python has a special class called properties, it allows to create getter/setter/deleter for a field. In combination with decorators you can define functional properties.
+Python has a special class called properties, it allows us to create getter/setter/deleter for a field. In combination with decorators you can define functional properties.
 
 ```python
 class MyClass:
@@ -140,7 +140,7 @@ I will not explain slots here, but you can find detailed info in the following r
 
 ### Context Managers
 
-Context managers are objects that can execute code at the begining and at the end of a code block. they are used with the `with` statement.
+Context managers are objects that can execute code at the beginning and at the end of a code block. they are used with the `with` statement.
 
 For more info about context managers: [https://docs.python.org/3/library/contextlib.html](https://docs.python.org/3/library/contextlib.html)
 
@@ -556,7 +556,7 @@ class properties:
 
 ### `self_properties(self, scope, exclude=(), save_args=False)`
 
-This utility function copy all the symbols in `scope` to self as properties. If you call it at the begining of the constructor and pass the local scope, it will just copy the function arguments.
+This utility function copy all the symbols in `scope` to self as properties. If you call it at the beginning of the constructor and pass the local scope, it will just copy the function arguments.
 
 ```python
 def __init__(self, brand: str, max_speed: float = 200):
