@@ -5,7 +5,7 @@ date: 2020-07-23
 categories: [python, metaprogramming, advanced]
 ---
 
-Metaprogramming is an advanced topic, it requires a good understanding of the language itself. I assume you already know Python well enough even though I include references to complementary resources. If you are interested only in the final result, there is a link to te code at the end of the article.
+Metaprogramming is an advanced topic, it requires a good understanding of the language itself. I assume you already know Python well enough even though I include references to complementary resources. If you are interested only in the final result, there is a link to the code at the end of the article.
 
 Python is a very dynamic language, everything is an object, objects are created by classes (usually) but classes can also be created by other
 clases or functions (this is amazing). Objects, once created, can be modified (add/remove/replace properties, methods, attributes, etc...) and this
