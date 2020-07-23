@@ -15,7 +15,7 @@ Ok but what is metaprogramming? here is a definition from wikipedia:
 
 <div class="card">
   <p class="card-body">
-    Metaprogramming is a programming technique in which computer programs have the ability to treat other programs as their data. It means that a program can be designed > to read, generate, analyze or transform other programs, and even modify itself while running.  
+    Metaprogramming is a programming technique in which computer programs have the ability to treat other programs as their data. It means that a program can be designed to read, generate, analyze or transform other programs, and even modify itself while running.  
     <br />
     <br />
     <small>
