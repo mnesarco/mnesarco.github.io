@@ -5,6 +5,16 @@ date: 2020-02-25
 categories: [hasura, plpgsql, postgresql]
 ---
 
+```
+EDIT: 2021-11-17
+
+Hasura now supports volatile functions as mutations. So this article is no longer relevant.
+
+See: https://hasura.io/docs/latest/graphql/core/databases/postgres/schema/custom-functions.html
+
+```
+
+
 Hasura does not provide a direct mechanism to call postgresql stored functions as mutations at the current version (1.2-beta),
 but you can combine some easy tricks to archive that.
 
